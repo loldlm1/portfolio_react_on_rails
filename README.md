@@ -32,3 +32,11 @@ Verify that everything goes well
 When servers up we open
 
   [localhost:3000/hello_world](http://localhost:3000/hello_world)
+
+Git control versioning
+  
+  ```bash
+  $ git init
+  $ git add .
+  $ git commit -m "message"
+  ```
