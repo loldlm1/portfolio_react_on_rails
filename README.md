@@ -10,6 +10,8 @@ Adding gems
 
   ```rb
   gem "react_on_rails", "~> 7" # https://github.com/shakacode/react_on_rails
+  gem 'devise'
+  gem 'pg'
   ```
 
 Installing dependencies
@@ -18,12 +20,22 @@ Installing dependencies
 
 Installing gems that need runs command
 
-  `$ rails g react_on_rails:install --redux` # In this case I've configured react with redux included
+  ```bash
+  $ rails g react_on_rails:install --redux # In this case I've configured react with redux included
+  $ rails g devise:install
+  $ rails generate devise User
+  ```
+
+Creating our DB(PostgreSQL) models
+
+  ```
+  ```
 
 Install all dependencies & runs migrations
 
   `$ bundle install & npm install`
   `$ gem install foreman`
+  `$ rake db:migrate`
 
 Verify that everything goes well
 
