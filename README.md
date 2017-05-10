@@ -23,12 +23,14 @@ Installing gems that need runs command
   ```bash
   $ rails g react_on_rails:install --redux # In this case I've configured react with redux included
   $ rails g devise:install
-  $ rails generate devise User
   ```
 
 Creating our DB(PostgreSQL) models
 
   ```
+  $ rails g devise User
+  $ rails g Project name description link user:references
+  $ rails g Skill name stars:integer user:references
   ```
 
 Install all dependencies & runs migrations
