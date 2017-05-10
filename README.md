@@ -39,4 +39,6 @@ Git control versioning
   $ git init
   $ git add .
   $ git commit -m "message"
+  $ git remote add origin # here you must add your new repository
+  $ git push -u origin master
   ```
