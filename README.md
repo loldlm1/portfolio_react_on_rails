@@ -35,9 +35,11 @@ Creating our DB(PostgreSQL) models
 
 Install all dependencies & runs migrations
 
-  `$ bundle install & npm install`
-  `$ gem install foreman`
-  `$ rake db:migrate`
+  ```bash
+  $ bundle install & npm install
+  $ gem install foreman
+  $ rake db:migrate
+  ```
 
 Verify that everything goes well
 
