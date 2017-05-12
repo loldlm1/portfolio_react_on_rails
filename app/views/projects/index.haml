@@ -1,0 +1,19 @@
+%h3
+  All projects created~
+
+- @projects.each do |project|
+  .image-name
+    %h4
+      = project.name
+  .description
+    %p
+      = project.description
+  .link-project
+    = link_to project
+  %br
+  %hr
+  %br
+
+%strong
+  Made by
+  = link_to 'Moises', 'https://github.com/loldlm1'

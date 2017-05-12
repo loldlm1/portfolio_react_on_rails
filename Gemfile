@@ -36,6 +36,7 @@ gem 'jbuilder', '~> 2.5'
 gem 'devise'
 gem "react_on_rails", "~> 7" # https://github.com/shakacode/react_on_rails
 gem 'pg'
+gem 'haml', '~> 4.0.5'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
@@ -43,10 +44,21 @@ gem 'pg'
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platform: :mri
+  gem 'factory_girl_rails'
+  gem 'faker', '~> 1.7.1'
+  gem 'rspec-rails'
+  gem 'shoulda-matchers'
+  gem 'shoulda-callback-matchers', '~> 1.1.1'
+  gem 'spinach-rails'
+end
+
+group :test do
+  gem 'capybara'
 end
 
 group :development do
   # Access an IRB console on exception pages or by using <%= console %> anywhere in the code.
+  gem 'better_errors'
   gem 'web-console', '>= 3.3.0'
   gem 'listen', '~> 3.0.5'
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
